@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 05 - HTML Properties</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Task 05: HTML Properties</h1>
+    <p>Learning how JavaScript reads HTML elements</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. .value</h2>
+      <label for="username">Enter your name:</label>
+      <input id="username" value="Sajid">
+      <button onclick="getValue()">Get Value</button>
+      <p id="valueResult" class="result"></p>
+    </section>
+
+    <section>
+      <h2>2. .innerText</h2>
+      <p id="textExample">Hello Sajid!</p>
+      <button onclick="getInnerText()">Get innerText</button>
+      <p id="innerTextResult" class="result"></p>
+    </section>
+
+    <section>
+      <h2>3. .textContent</h2>
+      <p id="contentExample">
+        Hello <b>Sajid</b>!
+        <span hidden> Hidden text</span>
+      </p>
+      <button onclick="getTextContent()">Get textContent</button>
+      <p id="contentResult" class="result"></p>
+    </section>
+
+    <section>
+      <h2>4. .innerHTML</h2>
+      <div id="htmlExample">
+        <b>Hello</b> from <i>HTML</i>
+      </div>
+      <button onclick="getInnerHTML()">Get innerHTML</button>
+      <pre id="htmlResult" class="result"></pre>
+    </section>
+
+    <section>
+      <h2>5. .outerHTML</h2>
+      <p id="outerExample" class="highlight">
+        This is an example paragraph.
+      </p>
+      <button onclick="getOuterHTML()">Get outerHTML</button>
+      <pre id="outerResult" class="result"></pre>
+    </section>
+
+    <section>
+      <h2>6. .checked</h2>
+      <label>
+        <input type="checkbox" id="agree">
+        I agree to the assignment.
+      </label>
+      <button onclick="getChecked()">Check Status</button>
+      <p id="checkedResult" class="result"></p>
+    </section>
+
+    <section>
+      <h2>7. .selectedIndex</h2>
+      <label for="course">Choose a course:</label>
+      <select id="course">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+      </select>
+      <button onclick="getSelectedIndex()">Get Index</button>
+      <p id="indexResult" class="result"></p>
+    </section>
+
+    <section>
+      <h2>8. .files</h2>
+      <label for="fileInput">Choose a file:</label>
+      <input type="file" id="fileInput">
+      <button onclick="getFiles()">Get File</button>
+      <p id="filesResult" class="result"></p>
+    </section>
+
+    <section>
+      <h2>9. .className</h2>
+      <p id="classExample" class="highlight box">
+        This element has two classes.
+      </p>
+      <button onclick="getClassName()">Get className</button>
+      <p id="classResult" class="result"></p>
+    </section>
+
+    <section>
+      <h2>10. .id</h2>
+      <p id="idExample">Find my ID!</p>
+      <button onclick="getId()">Get ID</button>
+      <p id="idResult" class="result"></p>
+    </section>
+
+    <section>
+      <h2>11. .attributes</h2>
+      <p id="attributesExample"
+         class="highlight"
+         title="Example tooltip"
+         data-topic="JavaScript">
+        Inspect my attributes.
+      </p>
+      <button onclick="getAttributes()">Get Attributes</button>
+      <pre id="attributesResult" class="result"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for JavaScript Assignment - Task 05</p>
+  </footer>
+</body>
+</html>
